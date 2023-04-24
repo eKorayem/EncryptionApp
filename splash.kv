@@ -1,0 +1,66 @@
+MDScreen:
+    md_bg_color:(255,255,255,1)
+    MDBoxLayout:
+        orientation:'vertical'
+        MDBoxLayout:
+            size_hint_y:.25
+            padding:dp(9)
+            MDBoxLayout:
+                orientation:"vertical"
+                MDLabel:
+                    text:"Encrypt text"
+                    font_style:"H4"
+                MDBoxLayout:
+                    adaptive_size:True
+                    spacing:dp(10)
+                    MDLabel:
+                        text:"Home"
+                        text_size:None,None
+                        adaptive_width:True
+                    MDIcon:
+                        icon:'chevron-down'
+
+        MDGridLayout:
+            size_hint_y:.75
+            cols:2
+            padding:[dp(15),dp(15),dp(15),dp(150)]
+            spacing:dp(15)
+            MDCard:
+                size_hint: .1,.1
+                image:"Downloads/calendar.png"
+                text:"Calender"
+                subtext:"March, Wednesday"
+                items_count:"3 Events"
+
+            MDCard:
+                size_hint: .1,.1
+                image:"Downloads/food.png"
+                text:"Groceries"
+                subtext:"Broccoli, Apple"
+                items_count:"4 Items"
+
+            MDCard:
+                size_hint: .1,.1
+                image:"Downloads/ff.png"
+                text:"Location"
+                subtext:"Lucy Mao going to Office"
+                items_count:""
+
+            MDCard:
+                size_hint: .1,.1
+                image:"Downloads/festival.png"
+                text:"Activity"
+                items_count:""
+                subtext:"Rose favorite your Post"
+
+
+<MDCard@MDCard>:
+    md_bg_color:(120/255,0.0,0.0,1.0)
+    padding:dp(15)
+    spacing:dp(15)
+    radius:dp(25)
+    ripple_behavior: True
+    # image:''
+    # text:""
+    # items_count:""
+    # subtext:''
